@@ -14,7 +14,7 @@ const app = express();
 app.set("port", process.env.PORT || 5000);
 
 const corsOption = {
-  origin: "https://url-shortener-kartik.netlify.app/",
+  origin: "https://url-shortener-kartik.netlify.app",
   credentials: true,
 };
 
