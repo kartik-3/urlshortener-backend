@@ -77,7 +77,7 @@ mongoClient.connect(mongoURL, (err, dbname) => {
                 }
               );
 
-              const mailBodyUrl = `http://localhost:5500/newPassword.html?mail=${req.body.email}&rand=${rand}`;
+              const mailBodyUrl = `https://url-shortener-kartik.netlify.app/newPassword.html?mail=${req.body.email}&rand=${rand}`;
               const mailBody = `<p>Open the following link for verification<p><br/><i>${mailBodyUrl}</i>`;
               var mailOptions = {
                 from: process.env.USER_EMAIL,
